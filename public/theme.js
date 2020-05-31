@@ -15,6 +15,7 @@ function toggleTheme() {
   const current = localStorage.getItem('theme');
   const next = themeMap[current];
 
+
   bodyClass.replace(current, next);
   localStorage.setItem('theme', next);
 }
